@@ -4,7 +4,7 @@ import openpyxl
 from openpyxl import Workbook, load_workbook
 
 class ExcelMergeApp:
-    VERSION = "1.0.0"
+    VERSION = "1.0.1"
 
     def __init__(self, master):
         self.master = master
@@ -115,7 +115,7 @@ class ExcelMergeApp:
         """
         frames = list(self.master.children.values())
         # [0] -> control_frame, [1] -> header_frame, [2] -> main_frame, ...
-        header_frame = frames[1]
+        header_frame = frames[2]
 
         new_col_idx = self.file_col_count + 1
         tk.Label(header_frame, text=f"파일 경로 #{self.file_col_count+1}", width=30)\
