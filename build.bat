@@ -1,0 +1,1 @@
+pyinstaller --onefile --paths=".\venv\Lib\site-packages" .\apps\excel_merge\excel_merge.pyw
